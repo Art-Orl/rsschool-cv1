@@ -11,3 +11,14 @@ bm.addEventListener('click', () => {
   b2.classList.toggle('active2');
   b3.classList.toggle('active3');
 });
+
+const links = document.querySelectorAll('.burger__list_item');
+console.log(links);
+links.forEach((item) =>
+  item.addEventListener('click', () => {
+    list.classList.toggle('active-menu');
+    b1.classList.toggle('active1');
+    b2.classList.toggle('active2');
+    b3.classList.toggle('active3');
+  }),
+);

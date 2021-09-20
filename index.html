@@ -10,17 +10,19 @@
 </head>
 <body class="cv">
     <div class="menu-burger">
+        <h1 class="h">CV</h1>
         <div class = "border border1"></div>
         <div class = "border border2"></div>
         <div class = "border border3"></div>
       </div>
       <div class="menu-list">
         <div class ="layout">
-        <ul class="list">
-          <li>Contacts</li>
-          <li>Skills</li>
-          <li>Projects</li>
-          <li>Education</li>
+                <ul class="burger__list">
+                        <li class="burger__list_item"><a href="#contacts">contacts</a></li>
+                         <li class="burger__list_item" ><a href="#skills">skills</a></li>
+                        <li class="burger__list_item"><a href="#videoresume">videoresume</a></li>
+                         <li class="burger__list_item"><a href="#education">education</a></li>
+                      </ul>
       </ul>
     </div>
       </div>
@@ -28,10 +30,10 @@
      <header class="header">
        <nav class="haeder__nav">
          <ul class="nav__list">
-          <li class="nav__list_item">contacts</li>
-           <li class="nav__list_item" >projects</li>
-          <li class="nav__list_item">code expample</li>
-           <li class="nav__list_item">education</li>
+          <li class="nav__list_item"><a href="#contacts">contacts</a></li>
+           <li class="nav__list_item" ><a href="#skills">skills</a></li>
+          <li class="nav__list_item"><a href="#videoresume">videoresume</a></li>
+           <li class="nav__list_item"><a href="#education">education</a></li>
         </ul>
        </nav>
      </header> 
@@ -41,9 +43,9 @@
           <figure class="cv-figure">
             <img class="cv-photo" src="assets/ME.jpg" alt="avatar">
           </figure>
-          <h1 class="cv-h1">Artem Arliuta</h1>
+          <h2 class="cv-h1">Artem Arliuta</h2>
         </section>
-        <section class="cv-sec cv-contacts">
+        <section class="cv-sec cv-contacts" id="contacts">
           <h2 class="cv-h2 cv-h2-white">Contacts</h2>
           <ul class="contacts-list">
             <li class="contacts-item">
@@ -66,7 +68,7 @@
             </li>
           </ul>
         </section>
-        <section class="cv-sec cv-skills">
+        <section class="cv-sec cv-skills" id="skills">
           <h2 class="cv-h2 cv-h2-white">Skills</h2>
           <ul class="cv-skills-list">
             <li class="cv-skills-item">React </li>
@@ -122,7 +124,7 @@
           </div>
         </section>
        
-        <section class="cv-sec cv-education">
+        <section class="cv-sec cv-education" id="education">
           <h2 class="cv-h2"> <img src="assets/mortarboard-grey.svg" alt=""> Education</h2>
 
           <h3 class="cv-h3">Online learning</h3>
@@ -147,6 +149,16 @@
           </div>
 
         </section>
+        <section class="cv-sec videoresume" id="videoresume">
+                <h2 class="cv-h2"> <img src="assets/video-78.svg" alt="book"> Video Resume</h2>
+                <div class="video"><video src="./assets/Self-introduction RSSchool 2021.mp4"  controls >       
+                </video>
+                
+            </div>
+            <div class="video__link"> <a target="_blank" href="https://www.youtube.com/watch?v=mbMJH6zoKKc"><img src="assets/free-icon-youtube-logotype-49084.svg"/></a></div>
+           
+          </section>
+          
         <section class="cv-sec cv-english">
           <h2 class="cv-h2"> <img src="assets/books-grey.svg" alt="book"> English</h2>
           <div class="cv-text">
